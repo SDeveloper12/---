@@ -1,0 +1,904 @@
+/*
+header {
+    background: #BDD1FF;
+    color: #36343B;
+    font-family: helvetica serif;
+}
+.foto {
+    width: 500px;
+}
+.nom {
+    background: #9CADFF;
+    color: #36343B;
+    font-family: helvetica serif;
+}
+*/
+.container {
+    color: #5c5959;
+}
+header {
+    background-color: #FFF7E7; 
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFF7E7;
+}
+.menu {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    flex: 1 1 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+.menu_list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.menu_item {
+    margin: 0 10px;
+}
+.button {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: #6478FF;
+    border-radius: 5px;
+    transition: background-color 0.3 ease 0s;
+}
+.button:hover {
+    background-color: #7a84c7;
+
+}
+a {
+    font-size: 18px;
+    color: #5c5959;
+    font-weight: bold;
+    
+}
+a:hover {
+    color: #BDBDBD;
+    text-decoration:none;
+    font-weight: 500;
+}
+.zagolovok {
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+    color: #363636;
+}
+.zagolovok2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #5c5959;
+    display: block;
+}
+.preimyshestva {
+    background-color: #FFF7E7;
+    border-radius: 10px;
+    box-shadow: 3px 2px #ccc9c2;
+    border-left: #6478FF solid 5px;
+    padding: 20px;
+    min-width: 300px;
+    margin: 10px;
+}
+.rooms {
+    background-color: #99a6f8;
+}
+.comnatydve {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comnaty {
+    width: 40%;
+    height: 100%;
+    min-height: 491px;
+    padding: 20px 0px;
+    min-width: 450px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.cmn{
+    display: flex;
+    align-items: flex-end;
+}
+.slogan {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.motto {
+    padding-top:200px;;
+}
+.blur {
+    position: absolute;
+    background: rgba(28, 28, 29, 0.281);
+    backdrop-filter: blur(3px);
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    
+}
+.blurup {
+    color: #FFF7E7;
+    font-family: URW Chancery L, cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.slogan_item {
+    color: #FFF7E7;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    list-style: none;
+}
+.blurcont li:before {
+    content: "\2714  ";
+}
+.blurcont {
+    padding: 20%;
+}
+.photo_hostela {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.photo_hostela img{
+    max-width: 800px;
+    margin: 0%;
+}
+.photo_container {
+    width: 10000px;
+    position: relative;
+    display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.str {
+    font-size: 60px;
+    position: absolute;
+    font-weight: 1000;
+    color:#ccc9c2;
+    opacity: 0.8;
+}
+.perehod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    display: flex;
+    width: 7px;
+    height: 7px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #5c5959;
+    animation: cr 27s linear infinite;
+}
+.c2 {
+    animation-delay: 3s;
+}
+.c3 {
+    animation-delay: 6s;
+}
+.c4 {
+    animation-delay: 9s;
+}
+.c5 {
+    animation-delay: 12s;
+}
+.c6 {
+    animation-delay: 15s;
+}
+.c7 {
+    animation-delay: 18s;
+}
+.c8 {
+    animation-delay: 21s;
+}
+.c9 {
+    animation-delay: 24s;
+}
+@keyframes cr {
+0% {
+    background-color: #030405;
+    width: 9px;
+    height: 9px;
+}
+7% {
+    background-color: #030405;
+    width: 9px;
+    height: 9px;
+}
+7.1% {
+    background-color: #5c5959;
+    width: 7px;
+    height: 7px;
+}
+100% {
+    background-color: #5c5959;
+    width: 7px;
+    height: 7px;
+}
+}
+.otz {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-top: #FFF7E7 solid 1px;
+    border-bottom: #FFF7E7 solid 1px;
+}
+.otz1 {
+    background-color: #FFF7E7;
+    width: 45%;
+    margin: auto;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 300px;
+    position: relative;
+}
+.nom1, .nom2, .nom3 {
+    position: absolute;
+    opacity: 0;
+}
+.slide {
+    animation: slider 30s infinite ease-in-out;
+}
+.nom2 {
+    animation-delay: 10s;
+}
+.nom3 {
+    animation-delay: 20s;
+}
+@keyframes slider {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.img1 {
+    order: 1;
+    animation: anim1 27s linear infinite;
+}
+.img3 {
+    order: 2;
+    animation: anim3 27s linear infinite;
+}
+.img4 {
+    order: 3;
+    animation: anim4 27s linear infinite;
+}
+.img5 {
+    order: 4;
+    animation: anim5 27s linear infinite;
+}
+.img6 {
+    order: 5;
+    animation: anim6 27s linear infinite;
+}
+.img7 {
+    order: 6;
+    animation: anim7 27s linear infinite;
+}
+.img8 {
+    order: 7;
+    animation: anim8 27s linear infinite;
+}
+.img10 {
+    order: 8;
+    animation: anim10 27s linear infinite;
+}
+.img11 {
+    order: 9;
+    animation: anim11 27s linear infinite;
+}
+@keyframes anim1 {
+0% {
+    order: 1;
+}
+20% {
+    order: 9;
+}
+30% {
+    order: 8;    
+}
+40% {
+    order: 7;
+}
+50% {
+    order: 6;
+}
+60% {
+    order: 5;
+}
+70% {
+    order: 4;
+}
+80% {
+    order: 3;
+}
+90% {
+    order: 2;
+}
+100% {
+    order: 1;
+}   
+}
+@keyframes anim3 {
+    0% {
+        order: 2;
+    }
+    20% {
+        order: 1;
+    }
+    30% {
+        order: 9;    
+    }
+    40% {
+        order: 8;
+    }
+    50% {
+        order: 7;
+    }
+    60% {
+        order: 6;
+    }
+    70% {
+        order: 5;
+    }
+    80% {
+        order: 4;
+    }
+    90% {
+        order: 3;
+    }
+    100% {
+        order: 2;
+    }       
+}
+@keyframes anim4 {
+    0% {
+        order: 3;
+    }
+    20% {
+        order: 2;
+    }
+    30% {
+        order: 1;    
+    }
+    40% {
+        order: 9;
+    }
+    50% {
+        order: 8;
+    }
+    60% {
+        order: 7;
+    }
+    70% {
+        order: 6;
+    }
+    80% {
+        order: 5;
+    }
+    90% {
+        order: 4;
+    }
+    100% {
+        order: 3;
+    }       
+}
+@keyframes anim5 {
+    0% {
+        order: 4;
+    }
+    20% {
+        order: 3;
+    }
+    30% {
+        order: 2;    
+    }
+    40% {
+        order: 1;
+    }
+    50% {
+        order: 9;
+    }
+    60% {
+        order: 8;
+    }
+    70% {
+        order: 7;
+    }
+    80% {
+        order: 6;
+    }
+    90% {
+        order: 5;
+    }
+    100% {
+        order: 4;
+    }       
+}
+@keyframes anim6 {
+    0% {
+        order: 5;
+    }
+    20% {
+        order: 4;
+    }
+    30% {
+        order: 3;    
+    }
+    40% {
+        order: 2;
+    }
+    50% {
+        order: 1;
+    }
+    60% {
+        order: 9;
+    }
+    70% {
+        order: 8;
+    }
+    80% {
+        order: 7;
+    }
+    90% {
+        order: 6;
+    }
+    100% {
+        order: 5;
+    }       
+}
+@keyframes anim7 {
+    0% {
+        order: 6;
+    }
+    20% {
+        order: 5;
+    }
+    30% {
+        order: 4;    
+    }
+    40% {
+        order: 3;
+    }
+    50% {
+        order: 2;
+    }
+    60% {
+        order: 1;
+    }
+    70% {
+        order: 9;
+    }
+    80% {
+        order: 8;
+    }
+    90% {
+        order: 7;
+    }
+    100% {
+        order: 6;
+    }       
+}
+@keyframes anim8 {
+    0% {
+        order: 7;
+    }
+    20% {
+        order: 6;
+    }
+    30% {
+        order: 5;    
+    }
+    40% {
+        order: 4;
+    }
+    50% {
+        order: 3;
+    }
+    60% {
+        order: 2;
+    }
+    70% {
+        order: 1;
+    }
+    80% {
+        order: 9;
+    }
+    90% {
+        order: 8;
+    }
+    100% {
+        order: 7;
+    }       
+}
+@keyframes anim10 {
+    0% {
+        order: 8;
+    }
+    20% {
+        order: 7;
+    }
+    30% {
+        order: 6;    
+    }
+    40% {
+        order: 5;
+    }
+    50% {
+        order: 4;
+    }
+    60% {
+        order: 3;
+    }
+    70% {
+        order: 2;
+    }
+    80% {
+        order: 1;
+    }
+    90% {
+        order: 9;
+    }
+    100% {
+        order: 8;
+    }       
+}
+@keyframes anim11 {
+    0% {
+        order: 9;
+    }
+    20% {
+        order: 8;
+    }
+    30% {
+        order: 7;    
+    }
+    40% {
+        order: 6;
+    }
+    50% {
+        order: 5;
+    }
+    60% {
+        order: 4;
+    }
+    70% {
+        order: 3;
+    }
+    80% {
+        order: 2;
+    }
+    90% {
+        order: 1;
+    }
+    100% {
+        order: 9;
+    }       
+}
+
+@keyframes anim11 {
+    0% {
+        order: 1;
+    }
+    20% {
+        order: 2;
+    }
+    30% {
+        order: 3;    
+    }
+    40% {
+        order: 4;
+    }
+    50% {
+        order: 5;
+    }
+    60% {
+        order: 6;
+    }
+    70% {
+        order: 7;
+    }
+    80% {
+        order: 8;
+    }
+    90% {
+        order: 9;
+    }
+    100% {
+        order: 1;
+    }       
+}
+.ft {
+    min-width: 200px;
+    justify-content: center;
+}
+.ftimg {
+padding: 5px;
+}
+footer {
+    background: #6478FF;
+    color:#FFF7E7;
+    padding: 50px;
+}
+.otzivi, .meropriyatiya {
+    background: #99a6f8; 
+}
+footer p, .ftimg {
+    color: #FFF7E7;
+}
+.meropr {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.kart{
+    min-width: 300px;
+    max-width: 800px;
+    margin: 0%;
+    color:#FFF7E7;
+    margin-right: 50px;
+    
+}
+.kart img{
+    align-items: center;
+}
+.meropr_container {
+    width: 10000px;
+    position: relative;
+    display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.one {
+    order: 1;
+    animation: animation1 30s linear infinite;
+}
+.two {
+    order: 2;
+    animation: animation2 30s linear infinite;
+}
+.three {
+    order: 3;
+    animation: animation3 30s linear infinite;
+}
+.four {
+    order: 4;
+    animation: animation4 30s linear infinite;
+}
+.five {
+    order: 5;
+    animation: animation5 30s linear infinite;
+}
+.six {
+    order: 6;
+    animation: animation6 30s linear infinite;
+}
+
+@keyframes animation1 {
+0% {
+    order: 1;
+}
+15% {
+    order: 6;
+}
+30% {
+    order: 5;    
+}
+45% {
+    order: 4;
+}
+60% {
+    order: 3;
+}
+75% {
+    order: 2;
+}
+100% {
+    order: 1;
+}
+}
+@keyframes animation2 {
+0% {
+    order: 2;
+}
+15% {
+    order: 1;
+}
+45% {
+    order: 6;    
+}
+30% {
+    order: 5;
+}
+60% {
+    order: 4;
+}
+75% {
+    order: 3;
+}
+100% {
+    order: 2;
+}
+}
+@keyframes animation3 {
+0% {
+    order: 3;
+}
+15% {
+    order: 2;
+}
+30% {
+    order: 1;    
+}
+45% {
+    order: 6;
+}
+60% {
+    order: 5;
+}
+75% {
+    order: 4;
+}
+100% {
+    order: 3;
+}
+}
+@keyframes animation4 {
+0% {
+    order: 4;
+}
+15% {
+    order: 3;
+}
+30% {
+    order: 2;    
+}
+45% {
+    order: 1;
+}
+60% {
+    order: 6;
+}
+75% {
+    order: 5;
+}
+100% {
+    order: 4;
+}
+}
+@keyframes animation5 {
+0% {
+    order: 5;
+}
+15% {
+    order: 4;
+}
+30% {
+    order: 3;    
+}
+45% {
+    order: 2;
+}
+60% {
+    order: 1;
+}
+75% {
+    order: 6;
+}
+100% {
+    order: 5;
+}
+}
+@keyframes animation6 {
+0% {
+    order: 6;
+}
+15% {
+    order: 5;
+}
+30% {
+    order: 4;    
+}
+45% {
+    order: 3;
+}
+60% {
+    order: 2;
+}
+75% {
+    order: 1;
+}
+100% {
+    order: 6;
+}
+}
+ul {
+    padding-left: 0;
+}
+@media (max-width: 1000px) {
+.blurup{
+    font-size: 20px;
+}
+.slogan_item{
+    font-size: 10px;
+}
+p, ul {
+    margin: 0;
+}
+.kart, .slide p{
+    font-size: 12px;
+}
+.kart {
+    max-width: 510px;
+}
+}
+@media (max-width: 500px) {
+.blurup{
+        font-size: 10px;
+    }
+.slogan_item{
+        font-size: 5px;
+    }
+p, ul {
+        margin: 0;
+    }
+.kart, .slide p{
+        font-size: 9px;
+    }
+.kart {
+        max-width: 290px;
+    }
+.motto {
+    padding-top: 300px;
+}
+}
+.bron {
+    padding: 20px 100px;
+    border-radius: 10px;
+    background-color: #FFF7E7;
+    color: #6478FF;
+}
